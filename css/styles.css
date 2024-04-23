@@ -52,6 +52,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-nav {
@@ -67,7 +68,10 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
+    /*margin-right: 76px;*/
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
 }
 
 .logo-studio {
@@ -91,52 +95,62 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
-    gap: 40px;
+    /*display: flex;*/
+    display: none;
+    /*gap: 40px;*/
     padding: 24px 0;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list:hover {
-    color: #404bbf;
+    /*color: #404bbf;*/
 }
 
 .nav-list:focus {
+    /**/
     color: #404bbf;
 }
 
 
 .current {
-    position: relative;
-    color: #404bbf;
+    /*  position: relative;
+    color: #404bbf;*/
 }
 
 .current::after {
-    content: "";
+    /*content: "";
     position: absolute;
     width: 100%;
     left: 0;
     bottom: -1px;
     height: 4px;
     background-color: #404bbf;
-    border-radius: 2px;
+    border-radius: 2px;*/
 }
 
 
-address {
-
+.kontakt {
     font-style: normal;
+    display: none;
+}
+
+.open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
 
 .kontakt-list {
-    display: flex;
-    gap: 40px;
+    /*display: flex;
+    gap: 40px;*/
 }
 
 
 .header-kontakt {
-    margin-left: auto;
+    /*margin-left: auto;*/
 }
 
 .kontakt {
@@ -154,19 +168,19 @@ address {
 }
 
 .mailto:hover {
-    color: #404bbf;
+    /*color: #404bbf;*/
 }
 
 .mailto:focus {
-    color: #404bbf;
+    /*color: #404bbf;*/
 }
 
 .kontakt:hover {
-    color: #404bbf;
+    /*color: #404bbf;*/
 }
 
 .kontakt:focus {
-    color: #404bbf;
+    /*color: #404bbf;*/
 }
 
 .section-hero {
@@ -549,34 +563,54 @@ button {
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
+
 
 
 }
 
 .footer-div {
-    display: flex;
-    align-items: baseline;
+    /*display: flex;
+    align-items: baseline;*/
+
 
 }
 
 .footer-logo {
-    margin-right: 120px;
+    /*margin-right: 120px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 96px;
+    padding-bottom: 72px;
+
+
+
+
 
 }
 
 .footer-icon-text {
-    font-weight: 500;
+    /*font-weight: 500;*/
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
     margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+
+    letter-spacing: 0.02em;
+
+    color: #fff;
 }
 
 .icon-list-list {
-    display: flex;
-    gap: 16px;
+    /*display: flex;
+    gap: 16px;*/
 }
 
 
@@ -590,13 +624,35 @@ button {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
+.footer-icon {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 72px;
+    min-width: 208px;
+}
+
+
+
 .footer-studio {
-    font-weight: 400;
+    /*font-weight: 400;
     line-height: 1.5;
     color: #F4F4FD;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;*/
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
 
 .footer-text {
@@ -606,6 +662,7 @@ button {
     color: #F4F4FD;
     line-height: 1.5;
     max-width: 264px;
+
 }
 
 .icon-item-footer {
@@ -643,6 +700,104 @@ button {
 
 
 
+.footer-form {
+    /*margin-left: 80px;*/
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 96px;
+
+
+}
+
+.footer-form-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subscribe-form {
+    /*display: flex;
+    gap: 24px;*/
+}
+
+.subscribe-label {}
+
+
+.subscribe-label-name {
+    width: 288px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+
+
+
+}
+
+.submit {
+    display: block;
+    min-width: 165px;
+    height: 40px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.subscribe-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+    margin-top: 16px;
+
+}
+
+.subscribe-button-icon {
+    margin-left: 16px;
+    fill: #fff;
+}
+
+
+
+
+
+
+/*-------modal--------*/
 
 
 
@@ -835,84 +990,15 @@ button {
     color: #4d5ae5;
 }
 
-.submit {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form {
-    margin-left: 80px;
-}
 
-.footer-form-text {
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-}
 
+/*&&&*/
 .E-mail {
     color #ffffff;
 }
 
-.subscribe-button {
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
-    border-radius: 4px;
 
-}
-
-.subscribe-button-icon {
-    margin-left: 16px;
-    fill: #fff;
-}
-
-.subscribe-form {
-    display: flex;
-    gap: 24px;
-}
-
-
-
-.subscribe-label-name {
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
-
-}
 
 .btn-order {
     display: block;
@@ -946,6 +1032,96 @@ button {
 
 @media screen and (min-width: 768px) {
 
+    .container {
+        width: 768px;
+    }
+
+    /*----------section1-header--768-----*/
+
+    .logo {
+        margin-right: 120px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+
+
+    .nav-list:hover {
+        color: #404bbf;
+    }
+
+    .nav-list:focus {
+        color: #404bbf;
+    }
+
+
+    .current {
+        position: relative;
+        color: #404bbf;
+    }
+
+    .current::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
+
+    .kontakt {
+        /*font-style: normal;
+        display: flex;*/
+        display: block;
+        /*flex-flow: column wrap;*/
+    }
+
+    .open-menu-btn {
+        display: none;
+    }
+
+    .kontakt-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .mailto:hover {
+        color: #404bbf;
+    }
+
+    .mailto:focus {
+        color: #404bbf;
+    }
+
+    .kontakt:hover {
+        color: #404bbf;
+    }
+
+    .kontakt:focus {
+        color: #404bbf;
+    }
+
+    .kontakt {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .kontakt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
     /*----------section1-hero--768-----*/
 
     .section-hero {
@@ -976,9 +1152,7 @@ button {
 
     /*------media--section2--768---------------*/
 
-    .container {
-        width: 768px;
-    }
+
 
     .information-list {
         gap: 72px 24px;
@@ -1020,11 +1194,106 @@ button {
         gap: 72px 24px;
     }
 
+    /*------media--footer--768---------------*/
+
+
+    .footer-div {
+        /*display: flex;
+        align-items: baseline;*/
+    }
+
+
+
+    .footer-logo {
+        /*margin-right: 120px;*/
+        /*padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 96px;
+        padding-bottom: 72px;*/
+    }
+
+    .footer-link {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
+
+        /*display: flex;*/
+        /*align-items: center;
+    justify-content: center;*/
+    }
+
+    .footer-icon-text {
+        /*font-weight: 500;*/
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        /*color: #FFFFFF;*/
+        margin-bottom: 16px;
+
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+
+        font-weight: 400;
+
+        letter-spacing: 0.02em;
+
+        color: #fff;
+    }
+
+    .icon-list-list {
+        /*display: flex;
+            gap: 16px;*/
+    }
+
+    .footer-form {
+        /*margin-left: 80px;*/
+        /*padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 96px;*/
+    }
+
+    .subscribe-form {
+        /*display: flex;
+                gap: 24px;*/
+
+    }
 }
 
 
 
+
 @media screen and (min-width: 1158px) {
+
+    .container {
+        width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /*----------section1-header--1158-----*/
+
+    .logo {
+        margin-left: 76px;
+    }
+
+    .kontakt-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .kontakt {
+
+        font-size: 16px;
+        line-height: 1.5;
+
+    }
 
     /*----------section1-hero--1158-----*/
 
@@ -1063,10 +1332,6 @@ button {
     /*------media--section2--1158---------------*/
 
 
-    .container {
-        width: 1158px;
-        margin: 0 auto;
-    }
 
     .information {
         padding-top: 120px;
@@ -1149,5 +1414,130 @@ button {
         display: flex;
         gap: 40px 24px;
     }
+
+    /*------media--footer--1158---------------*/
+
+    .footer {
+        background-color: #2e2f42;
+        padding: 100px 0;
+
+
+    }
+
+    .footer-div {
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    .footer-logo {
+        margin-right: 120px;
+
+    }
+
+    .footer-icon-text {
+        /*font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;*/
+    }
+
+    .icon-list-list {
+        display: flex;
+        gap: 16px;
+    }
+
+
+    .footer-link {
+        /*font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;*/
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+
+    .footer-studio {
+        /*font-weight: 400;
+        line-height: 1.5;
+        color: #F4F4FD;
+        letter-spacing: 0.02em;*/
+    }
+
+    .footer-text {
+        /*font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+        line-height: 1.5;*/
+        max-width: 264px;
+    }
+
+    .icon-item-footer {
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-link-footer {
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-link-footer:hover {
+        /* background-color: #31d0aa;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    }
+
+    .icon-link-footer:focus {
+        /*background-color: #31d0aa;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    }
+
+    .subscribe-button {
+        min-width: 165px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #4D5AE5;
+        border: none;
+        border-radius: 4px;*/
+
+    }
+
+    .subscribe-button-icon {
+        margin-left: 16px;
+        fill: #fff;
+    }
+
+    .subscribe-form {
+        display: flex;
+        gap: 24px;
+    }
+
 
 }
