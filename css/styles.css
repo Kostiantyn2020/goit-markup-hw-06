@@ -1351,7 +1351,7 @@ button {
         letter-spacing: 0.02em;
         /*color: #FFFFFF;*/
         margin-bottom: 16px;
-        display: none;
+
 
 
         /*align-items: center;*/
@@ -1372,12 +1372,10 @@ button {
     .footer-form {
         margin-left: 80px;
         padding: 0;
-        display: none;
+
     }
 
-    .footer-form-text {
-        display: none;
-    }
+    .footer-form-text {}
 
     .subscribe-form {
         display: flex;
