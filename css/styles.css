@@ -208,6 +208,7 @@ img {
 }
 
 .mob-menu {
+    display: none;
     width: 320px;
     height: 640px;
     position: fixed;
@@ -1304,19 +1305,21 @@ button {
 
     }
 
+    .footer {
+        pading: 100px;
+    }
+
     .footer-div {
-        /*display: flex;
-        align-items: baseline;*/
+        display: flex;
+        align-items: baseline;
+        width: 584px;
     }
 
 
 
     .footer-logo {
-        /*margin-right: 120px;*/
-        /*padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 96px;
-        padding-bottom: 72px;*/
+        margin-right: 120px;
+        padding 0;
     }
 
     .footer-link {
@@ -1335,6 +1338,12 @@ button {
     justify-content: center;*/
     }
 
+    .footer-icon {
+        min-width: none;
+        padding: 0;
+
+    }
+
     .footer-icon-text {
         /*font-weight: 500;*/
         font-size: 16px;
@@ -1342,8 +1351,9 @@ button {
         letter-spacing: 0.02em;
         /*color: #FFFFFF;*/
         margin-bottom: 16px;
+        display: none;
 
-        /*display: flex;*/
+
         /*align-items: center;*/
         /*justify-content: center;*/
 
@@ -1360,17 +1370,23 @@ button {
     }
 
     .footer-form {
-        /*margin-left: 80px;*/
-        /*padding-left: 16px;
-            padding-right: 16px;
-            padding-bottom: 96px;*/
-        display: flex;
+        margin-left: 80px;
+        padding: 0;
+        display: none;
+    }
+
+    .footer-form-text {
+        display: none;
     }
 
     .subscribe-form {
-        /*display: flex;
-                gap: 24px;*/
+        display: flex;
+        gap: 24px;
 
+    }
+
+    .subscribe-button {
+        margin-top: 0;
     }
 }
 
